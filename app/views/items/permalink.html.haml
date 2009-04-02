@@ -1,0 +1,19 @@
+-item = @item
+.post.group{:id => "post_#{item.id}"}
+  %h3= item.title
+  %h4= "#{time_ago_in_words(item.created_at)} ago by #{get_author(item.user_id)}"
+  %div.post_content
+    = item.content
+  %small
+    -if item.tags != []
+      = "filed under:"
+      -for tag in item.tags
+        -seperator = " "
+        -seperator = ", " unless tag == item.tags.last
+        = tag.name + seperator
+    -if current_user
+      -if current_user.has_role? "admin"
+        = link_to "edit", "/items/edit/#{item.id}"
+        = link_to "delete", "/items/destroy/#{item.id}"
+    -if item.link
+      = link_to link, item.link

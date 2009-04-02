@@ -1,0 +1,20 @@
+html
+  body
+    #canvas
+      #content
+        .main
+          .post
+            div.post_content
+              :margin= (!line_height/1.4em) 0
+              p
+                :margin= (!line_height/1.4em) 0
+            small
+              :margin-top= -(!line_height/1.1em)
+              :display block
+          .editor_toolbar
+            :margin= (!line_height/1.4em) 0 0
+            .button
+              :padding .5em .5em .5em 0
+          iframe.editor
+            :border= .1em solid (!link_color)
+            :width 100%

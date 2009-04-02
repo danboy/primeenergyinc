@@ -1,0 +1,51 @@
+%h1
+  Edit
+-form_for(@item) do |f|
+  %div
+    =f.label :title
+    =f.text_field :title
+  %div
+    =f.label :description
+    =f.text_field :description
+  %div
+    =f.label :content
+    =f.text_area :content
+  =f.hidden_field :page_id, :value => params[:page_id]
+  %div
+    =f.label :tag_list
+    =f.text_field :tag_list
+  %div
+    =f.submit "done"
+-content_for :onReady do
+  :plain
+      var LinkSelection = {
+        promptLinkSelection: function() {
+          var node = this.selection.getNode();
+          if (node.tagName == 'A') {
+            if (confirm("Remove link?"))
+              this.execCommand('unlink');
+          } else {
+            var value = prompt("Enter a URL", "http://www.google.com/");
+            if (value)
+              this.linkSelection(value);
+          }
+        },
+
+        queryLink: function() {
+          var node = this.selection.getNode();
+          return node ? node.tagName == 'A' : false;
+        }
+      }
+      Event.observe(window, 'load', function() {
+      var editor = WysiHat.Editor.attach('item_content');
+      toolbar = new WysiHat.Toolbar(editor, {buttonSet: WysiHat.Toolbar.ButtonSets.Basic});
+      Object.extend(editor, LinkSelection);
+
+      toolbar.addButton(
+        { name: 'link', label: "Link" }, function(editor) {
+        editor.promptLinkSelection();
+    });
+
+      // Hide our error message if the editor loads fine
+      $('error').hide();
+    });

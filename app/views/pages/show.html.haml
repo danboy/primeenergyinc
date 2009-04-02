@@ -1,0 +1,7 @@
+-if current_user
+  -if current_user.has_role? "admin"
+    =link_to "add item", :controller => :items, :action => :new, :page_id => @page.id
+-if @page.page_type == 1 || @page.page_type == 0
+  = render :file => "items/show"
+-content_for :page_name do
+  = link_to @page.name, @page

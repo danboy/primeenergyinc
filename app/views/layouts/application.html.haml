@@ -1,0 +1,44 @@
+- if !ie?
+  !!! XML
+!!! Strict
+%html
+  %head
+    = stylesheet_link_tag 'tenplate'
+    %link{'rel' => "alternate", 'type' => "application/rss+xml", 'title' => "RSS 2.0", 'href' => "http://www.pinmonkey.com/pages/1.rss"}
+
+  %body
+    #grid
+      #header.group
+        %h1#site_title Prime energy Inc.
+        #address
+          %h2 Prime Energy, Inc.
+          %ul
+            %li Phone: 630-961-0030
+            %li Fax: 630-904-0436
+            %li Email: info@primeenergyinc.com
+        = render :partial => "shared/menu"
+        = image_tag "splash.png"
+
+      #content.golden
+        .rail.group
+          = render :partial => "shared/cloud"
+          = render :partial => "shared/adsense"
+        .main.group
+          = yield
+      #footer.group
+        #copyright &copy; 2002-2009 Prime Energy Inc.
+        -if current_user
+          %p= "logged in as #{current_user.login}, #{link_to 'logout', '/logout'}"
+        -else
+          %p= link_to "not logged in", "/login", :id => "log_in"
+- # include javascript
+= javascript_include_tag :all
+= yield :javascript
+- if !current_user
+  -content_for :onReady do
+    login = new JSLib.Modal('log_in',{ajaxContent: 'element',overlay: true})
+
+:javascript
+  document.observe("dom:loaded",function(ev){
+    #{yield :onReady}
+  });

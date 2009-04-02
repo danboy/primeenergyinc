@@ -1,0 +1,5 @@
+%ul#navigation.group
+  -for item in get_menu
+    -selected = ""
+    -selected = " selected" if params[:id] == item.id.to_s
+    %li{:class => item.name.downcase + selected }= link_to item.name, :controller => :pages, :action => :show, :id => item.id

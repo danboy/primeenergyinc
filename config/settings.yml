@@ -1,0 +1,17 @@
+development: &non_production_settings
+  site_url: http://localhost:3000
+  site_name: pinmonkey
+  admin_email: dan@pinonkey.com
+
+test:
+  <<: *non_production_settings
+
+staging:
+  site_url: http://dev.pinmonkey.com
+  site_name: pinmonkey
+  admin_email: dan@pinonkey.com
+
+production:
+  site_url: http://www.pinmonkey.com
+  site_name: pinmonkey
+  admin_email: dan@pinonkey.com

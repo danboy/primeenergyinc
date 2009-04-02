@@ -1,0 +1,20 @@
+-for item in @items
+  .post.group{:id => "post_#{item.id}"}
+    %h3= link_to item.title, :controller => :items, :action => :permalink, :id => item.id
+    -if @page.page_type == 1
+      %h4= "#{time_ago_in_words(item.created_at)} ago by #{get_author(item.user_id)}"
+    %div.post_content
+      = item.content
+    %small
+      -if item.tags != []
+        = "filed under:"
+        -for tag in item.tags
+          -seperator = " "
+          -seperator = ", " unless tag == item.tags.last
+          = link_to "#{tag.name}#{seperator} ", :controller => :items, :action => :tag, :id => tag.name
+      -if current_user
+        -if current_user.has_role? "admin"
+          = link_to "edit", "/items/edit/#{item.id}"
+          = link_to "delete", "/items/destroy/#{item.id}"
+      -if item.link
+        = link_to link, item.link

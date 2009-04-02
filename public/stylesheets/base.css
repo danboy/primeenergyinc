@@ -1,0 +1,153 @@
+body {
+  font-size: 62.5%;
+  color: #333333;
+  font-family: helvetica,arial,sans-serif;
+  line-height: 1.8em;
+  background-color: white; }
+  body h1 {
+    font-size: 2.2em;
+    margin: 0.818em 0; }
+  body h2 {
+    font-size: 2em;
+    margin: 0.9em 0; }
+  body h3 {
+    font-size: 1.8em;
+    margin-bottom: -1em; }
+  body h4 {
+    font-size: 1.7em;
+    margin-top: 1.059em;
+    margin-bottom: -1.059em; }
+  body h5 {
+    font-size: 1.6em;
+    margin-top: 1.125em; }
+  body p,
+  body td,
+  body th {
+    font-size: 1.6em;
+    margin: 1.125em 0; }
+    body p p,
+    body p th,
+    body p td,
+    body p input,
+    body p label,
+    body td p,
+    body td th,
+    body td td,
+    body td input,
+    body td label,
+    body th p,
+    body th th,
+    body th td,
+    body th input,
+    body th label {
+      font-size: 1em;
+      margin: 0; }
+  body a {
+    color: #336699;
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: underline; }
+  body ul,
+  body ol {
+    display: block;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0; }
+    body ul li,
+    body ol li {
+      margin: 1.286em 0;
+      list-style: none; }
+      body ul li ul,
+      body ul li ol,
+      body ul li p,
+      body ul li *,
+      body ol li ul,
+      body ol li ol,
+      body ol li p,
+      body ol li * {
+        font-size: 1em; }
+  body pre.example {
+    border: .1em solid #900;
+    background: #333;
+    color: #EEE;
+    font-size: 1.6em;
+    margin: 1.125em 0;
+    display: block;
+    white-space: pre-wrap       /* css-3 */;
+    white-space: -moz-pre-wrap  /* Mozilla, since 1999 */;
+    white-space: -pre-wrap      /* Opera 4-6 */;
+    white-space: -o-pre-wrap    /* Opera 7 */;
+    word-wrap: break-word       /* Internet Explorer 5.5+ */; }
+    body pre.example code {
+      margin: 0;
+      padding: 0;
+      display: inline-block; }
+  body #notices {
+    width: auto;
+    background-color: #FFE6D4;
+    font-size: 1.6em;
+    padding: 0;
+    border-bottom: 1px solid #999; }
+    body #notices .flash-notice {
+      padding: 1em;
+      background-color: #90ee90;
+      color: #666; }
+    body #notices .flash-error {
+      background-color: #b73b29;
+      color: #DDD;
+      padding: 1em; }
+  body #Growler {
+    width: 96em;
+    margin: 0 auto; }
+    body #Growler .Growler-notice,
+    body #Growler .error {
+      background: #333;
+      width: 90%;
+      padding: 1em;
+      margin: 0 auto 1em auto;
+      color: #FFF;
+      font-size: 1.6em;
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      -khtml-border-radius: 0.2em;
+      -moz-order-radius: .4em;
+      -khtm-border-radius: .4em; }
+      body #Growler .Growler-notice h2,
+      body #Growler .Growler-notice p,
+      body #Growler .Growler-notice ul,
+      body #Growler .Growler-notice li,
+      body #Growler .error h2,
+      body #Growler .error p,
+      body #Growler .error ul,
+      body #Growler .error li {
+        font-size: 1em; }
+
+.group {
+  display: inline-block; }
+  .group:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+
+html[xmlns] .group {
+  display: block; }
+
+* html,
+* html body {
+  height: 100%;
+  overflow: auto; }
+
+* html .group {
+  height: 1%; }
+
+* html #overlay,
+* html #modal {
+  position: absolute; }
+
+* html #overlay {
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=50); }
