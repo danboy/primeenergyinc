@@ -550,6 +550,9 @@ body {
         border: 0.3em solid #ff6600;
         border-right: none;
         border-left: none; }
+      body #grid #content .main .post .post_content img.splash {
+        margin: 2em .5em .5em 0;
+        padding: .5em; }
     body #grid #content .rail ul.tag_cloud {
       width: 100%;
       margin: 2em 0; }

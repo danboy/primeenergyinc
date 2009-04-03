@@ -1,7 +1,7 @@
 %h1
   New Item for
   =@page.name
--form_for(@item) do |f|
+-form_for(@item, :html => { :multipart => true }) do |f|
   %div
     =f.label :title
     =f.text_field :title
@@ -9,12 +9,16 @@
     =f.label :description
     =f.text_field :description
   %div
+    =f.label "Upload an image."
+    =f.file_field :photo
+  %div
     =f.label :content
     =f.text_area :content
   =f.hidden_field :page_id, :value => params[:page_id]
   %div
     =f.label :tag_list
     =f.text_field :tag_list
+
   %div
     =f.submit "Create"
 -content_for :onReady do
