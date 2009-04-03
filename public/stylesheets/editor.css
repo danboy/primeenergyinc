@@ -1,0 +1,26 @@
+.editor_toolbar {
+  width: 90%;
+  border: .2em solid #999;
+  background: #999; }
+  .editor_toolbar .button {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-indent: -99999em;
+    outline: none; }
+    .editor_toolbar .button.bold {
+      background: #999 url(/images/buttons/bold.png) no-repeat center; }
+    .editor_toolbar .button.italic {
+      background: #999 url(/images/buttons/italic.png) no-repeat center; }
+    .editor_toolbar .button.underline {
+      background: #999 url(/images/buttons/underline.png) no-repeat center; }
+    .editor_toolbar .button.list {
+      background: #999 url(/images/buttons/bullets.png) no-repeat center; }
+    .editor_toolbar .button.link {
+      background: #999 url(/images/buttons/link.png) no-repeat center; }
+    .editor_toolbar .button.img {
+      background: #999 url(/images/buttons/img.png) no-repeat center; }
+
+iframe.editor {
+  border: .2em solid #999;
+  width: 90%; }
