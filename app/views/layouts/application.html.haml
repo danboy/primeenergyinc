@@ -36,7 +36,7 @@
 = yield :javascript
 - if !current_user
   -content_for :onReady do
-    login = new JSLib.Modal('log_in',{ajaxContent: 'element',overlay: true})
+    var login = new JSLib.Modal('log_in',{ajaxContent: 'element', overlay: true});
 
 :javascript
   document.observe("dom:loaded",function(ev){
