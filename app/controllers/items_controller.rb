@@ -17,6 +17,10 @@ class ItemsController < ApplicationController
   def new
     @page = Page.find(params[:page_id])
     @item = Item.new
+    respond_to do |format|
+      format.html
+      format.js {render :layout => 'ajax' if request.xhr?}
+    end
   end
 
   def create
