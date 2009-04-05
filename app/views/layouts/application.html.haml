@@ -45,8 +45,13 @@
     login = new JSLib.Modal('log_in',{ajaxContent: 'element',overlay: true})
 - else
   -content_for :onReady do
-    new JSLib.Modal('add_page',{ajaxContent: 'element',overlay: true})
-    new JSLib.Modal('add_item',{ajaxContent: 'element',overlay: true,onComplete: 'new JSLib.Editor("item_content","trigger")'})
+    :plain
+      new JSLib.Modal('add_page',{ajaxContent: 'element',overlay: true})
+      new JSLib.Modal('add_item',{ajaxContent: 'element',overlay: true,onComplete: 'manageEditor()'})
+      itemEditor = null;
+      manageEditor = function(){
+        if(itemEditor == null){itemEditor = new JSLib.Editor("item_content","trigger")}
+      }
 :javascript
   document.observe("dom:loaded",function(ev){
     #{yield :onReady}

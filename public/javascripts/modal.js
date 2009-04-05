@@ -93,6 +93,7 @@ JSLib.Modal = Class.create({
     if(this.options.overlay){
     Effect.Fade(this.overlay);
     }
+    this.doClose();
   },
   createModal: function(){
     if(this.options.overlay){this.createOverlay();}
@@ -155,6 +156,9 @@ JSLib.Modal = Class.create({
   },
   doComplete: function(){
   eval(this.options.onComplete)
+  },
+  doClose: function(){
+  eval(this.options.onClose)
   }
 
 });
