@@ -24,9 +24,10 @@
           -if current_user
             -if current_user.has_role? "admin"
               %ul.admin
-                %li=link_to "add item", {:controller => :items, :action => :new, :page_id => @page.id}, :id => "add_item"
+
+                %li=link_to "add item", {:controller => :items, :action => :new, :page_id => @page.id}, :id => "add_item" unless @page.nil?
                 %li=link_to "add page", {:controller => :pages, :action => :new}, :id => "add_page"
-                %li=link_to "remove this page", "/pages/destroy/#{@page.id}", :confirm => "Really delete page #{@page.name}?"
+                %li=link_to "remove this page", "/pages/destroy/#{@page.id}", :confirm => "Really delete page #{@page.name}?"  unless @page.nil?
           = render :partial => "shared/cloud"
           = render :partial => "shared/adsense"
         .main.group

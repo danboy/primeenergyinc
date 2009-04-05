@@ -15,6 +15,6 @@
     =f.label :tag_list
     =f.text_field :tag_list
   %div
-    =f.submit "done"
+    =f.submit "done", :id => "trigger"
 -content_for :onReady do
-  new JSLib.Editor("item_content");
+  new JSLib.Editor("item_content","trigger");
