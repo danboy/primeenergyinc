@@ -14,7 +14,7 @@ overlay:true will set a transparent overlay, this will close the modal when clic
 */
 
 JSLib.Editor = Class.create({
-  initialize: function(textArea,options){
+  initialize: function(textArea,trigger,options){
     this.editor = WysiHat.Editor.attach(textArea);
     this.toolbar = new WysiHat.Toolbar(this.editor);
     this.toolbar.addButtonSet(WysiHat.Toolbar.ButtonSets.Basic);
@@ -31,6 +31,7 @@ JSLib.Editor = Class.create({
       label: "img",
       handler: function() { self.promptImageSelection();}
     });
+    $(trigger).observe('mouseover',function(){self.editor.save()});
   },
   promptLinkSelection: function() {
       if (this.editor.linkSelected()) {

@@ -39,6 +39,7 @@ class PagesController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @page }
+      format.js {render :layout => 'ajax' if request.xhr?}
     end
   end
 
@@ -88,7 +89,7 @@ class PagesController < ApplicationController
     @page.destroy
 
     respond_to do |format|
-      format.html { redirect_to(pages_url) }
+      format.html { redirect_to(root_url) }
       format.xml  { head :ok }
     end
   end

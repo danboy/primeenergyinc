@@ -1,5 +1,5 @@
 %h1
-  New Item for
+  Add an item to
   =@page.name
 -form_for(@item, :html => { :multipart => true }) do |f|
   %div
@@ -20,6 +20,6 @@
     =f.text_field :tag_list
 
   %div
-    =f.submit "Create"
+    =f.submit "Create", :id => "trigger"
 -content_for :onReady do
-  new JSLib.Editor("item_content");
+  new JSLib.Editor("item_content", "trigger");

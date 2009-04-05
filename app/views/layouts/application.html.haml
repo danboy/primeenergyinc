@@ -21,6 +21,12 @@
 
       #content.golden
         .rail.group
+          -if current_user
+            -if current_user.has_role? "admin"
+              %ul.admin
+                %li=link_to "add item", {:controller => :items, :action => :new, :page_id => @page.id}, :id => "add_item"
+                %li=link_to "add page", {:controller => :pages, :action => :new}, :id => "add_page"
+                %li=link_to "remove this page", "/pages/destroy/#{@page.id}", :confirm => "Really delete page #{@page.name}?"
           = render :partial => "shared/cloud"
           = render :partial => "shared/adsense"
         .main.group
@@ -37,7 +43,10 @@
 - if !current_user
   -content_for :onReady do
     login = new JSLib.Modal('log_in',{ajaxContent: 'element',overlay: true})
-
+- else
+  -content_for :onReady do
+    new JSLib.Modal('add_page',{ajaxContent: 'element',overlay: true})
+    new JSLib.Modal('add_item',{ajaxContent: 'element',overlay: true,onComplete: 'new JSLib.Editor("item_content","trigger")'})
 :javascript
   document.observe("dom:loaded",function(ev){
     #{yield :onReady}
