@@ -8,6 +8,9 @@
     =f.label :description
     =f.text_field :description
   %div
+    =f.label "Upload an image."
+    =f.file_field :photo
+  %div
     =f.label :content
     =f.text_area :content
   =f.hidden_field :page_id, :value => params[:page_id]
