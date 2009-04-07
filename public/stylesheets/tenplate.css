@@ -73,6 +73,11 @@ body {
   font-family: helvetica,arial,sans-serif;
   line-height: 2em;
   background-color: white; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    font-weight: bold; }
   body h1 {
     font-size: 2.2em;
     margin: 0.909em 0; }
@@ -357,8 +362,9 @@ p textarea {
   width: 96em;
   padding: 1em; }
   * html #grid,
+  * html .grid {
+    width: 98em; }
   * + html #grid,
-  * html .grid,
   * + html .grid {
     width: 97em; }
 
@@ -579,7 +585,8 @@ body {
     margin: 2em auto;
     background: url(/images/page.png) no-repeat top center; }
     body #grid #header {
-      width: 100%; }
+      width: 100%;
+      text-align: center; }
       body #grid #header h1 {
         background: url(/images/logo.png) no-repeat center;
         width: 21.3em;
@@ -616,7 +623,8 @@ body {
               color: #FFF; }
       body #grid #header #address {
         float: right;
-        margin-right: .5em; }
+        margin-right: .5em;
+        text-align: right; }
         body #grid #header #address h2 {
           margin: .5em 0; }
         body #grid #header #address ul {
@@ -626,9 +634,6 @@ body {
             margin: .3em 0; }
       body #grid #header img {
         margin: 1em auto; }
-        * html body #grid #header img,
-        * + html body #grid #header img {
-          border: .2em solid transparent; }
     body #grid #content .main .post {
       display: block; }
       body #grid #content .main .post h3 {

@@ -10,9 +10,9 @@ on line 5 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.s
 6:     :background url(/images/page.png) no-repeat top center
 7:     #header
 8:       :width 100%
-9:       h1
-10:         :background url(/images/logo.png) no-repeat center
-11:         :width 21.3em
+9:       :text-align center
+10:       h1
+11:         :background url(/images/logo.png) no-repeat center
 
 
 Backtrace:
@@ -95,4 +95,4 @@ script/server:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: Undefined variable: \"!page_padding\".\A on line 5 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.sass\A \A 1: @import editor.sass\A 2: body\A 3:   :background url(/images/bac.png) repeat-x top\A 4:   #grid\A 5:     :margin= !page_padding+\"em auto\"\A 6:     :background url(/images/page.png) no-repeat top center\A 7:     #header\A 8:       :width 100%\A 9:       h1\A 10:         :background url(/images/logo.png) no-repeat center\A 11:         :width 21.3em\A "; }
+  content: "Sass::SyntaxError: Undefined variable: \"!page_padding\".\A on line 5 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.sass\A \A 1: @import editor.sass\A 2: body\A 3:   :background url(/images/bac.png) repeat-x top\A 4:   #grid\A 5:     :margin= !page_padding+\"em auto\"\A 6:     :background url(/images/page.png) no-repeat top center\A 7:     #header\A 8:       :width 100%\A 9:       :text-align center\A 10:       h1\A 11:         :background url(/images/logo.png) no-repeat center\A "; }

@@ -20,7 +20,8 @@
 .grid
   :width= !grid+"em"
   :padding= !page_padding/2+"em"
-  * html &,
+  * html &
+    :width= (!grid+(!page_padding))+"em"
   * + html &
     :width= (!grid+(!page_padding/2))+"em"
 .one_third, .two_thirds, .main, .column_one, .rail, .column, .two_quarters, .three_quarters, .half_column, .two_thirds

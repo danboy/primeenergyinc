@@ -71,6 +71,11 @@ body {
   font-family: helvetica,arial,sans-serif;
   line-height: 1.8em;
   background-color: white; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    font-weight: bold; }
   body h1 {
     font-size: 2.2em;
     margin: 0.818em 0; }

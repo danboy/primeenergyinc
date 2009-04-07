@@ -6,6 +6,7 @@ body
     :background url(/images/page.png) no-repeat top center
     #header
       :width 100%
+      :text-align center
       h1
         :background url(/images/logo.png) no-repeat center
         :width 21.3em
@@ -43,6 +44,7 @@ body
       #address
         :float right
         :margin-right .5em
+        :text-align right
         h2
           :margin .5em 0
         ul
@@ -51,10 +53,9 @@ body
             :font-size .9em
             :margin .3em 0
       img
-        :margin= !page_padding/2+"em" "auto"
+        :margin= !page_padding/2+"em" auto
         * html &,
         * + html &
-          :border .2em solid transparent
     #content
       .main
         .post
