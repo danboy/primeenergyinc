@@ -31,6 +31,7 @@
 =global-reset
   html, body
     +reset
+    :font-size 16px
   +nested-reset
 
 // Reset all elements within some selector scope.To reset the selector itself,
@@ -82,6 +83,8 @@
   :border-collapse separate
   :border-spacing 0
   :vertical-align middle
++global-reset
+
 body
   :font-size 62.5%
   :color= !font_color

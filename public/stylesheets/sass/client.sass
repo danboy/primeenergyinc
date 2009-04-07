@@ -2,18 +2,24 @@
 body
   :background url(/images/bac.png) repeat-x top
   #grid
-    :margin 0 auto
+    :margin= !page_padding+"em auto"
     :background url(/images/page.png) no-repeat top center
     #header
       :width 100%
       h1
         :background url(/images/logo.png) no-repeat center
-        :width 30.5em
+        :width 21.3em
         :height 10em
         :font-size 1em
         :margin-bottom= !page_padding/2+"em"
         :float left
         :text-indent -9999em
+        * html &,
+        * + html &
+          :width 22em
+          :height 10em
+        * html &
+          :background url(/images/logo.gif) no-repeat center
       ul#navigation
         :background url(/images/nav.png) no-repeat top center
         :width 100%
@@ -36,12 +42,19 @@ body
               :color #FFF
       #address
         :float right
+        :margin-right .5em
         h2
           :margin .5em 0
         ul
+          :margin 1em 0
           li
             :font-size .9em
             :margin .3em 0
+      img
+        :margin= !page_padding/2+"em" "auto"
+        * html &,
+        * + html &
+          :border .2em solid transparent
     #content
       .main
         .post
@@ -63,6 +76,9 @@ body
           li
             :display inline-block
             :margin 0
+            * html &,
+            * + html &
+              :float left
             &.tag_level-1
               :font_size 1em
             &.tag_level-2
