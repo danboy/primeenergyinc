@@ -588,7 +588,9 @@ body {
     background: url(/images/modal.png) no-repeat top center;
     width: 54em;
     padding: 2em 2em 2em 4em;
-    min-height: 15em; }
+    min-height: 15em;
+    max-height: 40em;
+    overflow: auto; }
   body .js_modal .js_foot {
     background: url(/images/modal.png) no-repeat bottom center;
     width: 60em;
