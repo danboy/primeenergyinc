@@ -1,11 +1,83 @@
 /* Tenplate config values */
 /* Tenplate SASS Includes */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-size: 16px; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" ""; }
+  blockquote:before,
+  blockquote:after,   q:before,
+  q:after {
+    content: ""; }
+
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+a img {
+  border: none; }
+
 body {
   font-size: 62.5%;
   color: #333333;
   font-family: helvetica,arial,sans-serif;
   line-height: 2em;
   background-color: white; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    font-weight: bold; }
   body h1 {
     font-size: 2.2em;
     margin: 0.909em 0; }
@@ -289,6 +361,12 @@ p textarea {
 .grid {
   width: 96em;
   padding: 1em; }
+  * html #grid,
+  * html .grid {
+    width: 98em; }
+  * + html #grid,
+  * + html .grid {
+    width: 97em; }
 
 .one_third, .two_thirds, .main, .column_one, .rail, .column, .two_quarters, .three_quarters, .half_column, .two_thirds {
   float: left;
@@ -504,18 +582,25 @@ iframe.editor {
 body {
   background: url(/images/bac.png) repeat-x top; }
   body #grid {
-    margin: 0 auto;
+    margin: 2em auto;
     background: url(/images/page.png) no-repeat top center; }
     body #grid #header {
-      width: 100%; }
+      width: 100%;
+      text-align: center; }
       body #grid #header h1 {
         background: url(/images/logo.png) no-repeat center;
-        width: 30.5em;
+        width: 21.3em;
         height: 10em;
         font-size: 1em;
         margin-bottom: 1em;
         float: left;
         text-indent: -9999em; }
+        * html body #grid #header h1,
+        * + html body #grid #header h1 {
+          width: 22em;
+          height: 10em; }
+        * html body #grid #header h1 {
+          background: url(/images/logo.gif) no-repeat center; }
       body #grid #header ul#navigation {
         background: url(/images/nav.png) no-repeat top center;
         width: 100%;
@@ -539,12 +624,18 @@ body {
             body #grid #header ul#navigation li:hover a {
               color: #FFF; }
       body #grid #header #address {
-        float: right; }
+        float: right;
+        margin-right: .5em;
+        text-align: right; }
         body #grid #header #address h2 {
           margin: .5em 0; }
-        body #grid #header #address ul li {
-          font-size: .9em;
-          margin: .3em 0; }
+        body #grid #header #address ul {
+          margin: 1em 0; }
+          body #grid #header #address ul li {
+            font-size: .9em;
+            margin: .3em 0; }
+      body #grid #header img {
+        margin: 1em auto; }
     body #grid #content .main .post {
       display: block; }
       body #grid #content .main .post h3 {
@@ -561,6 +652,9 @@ body {
       body #grid #content .rail ul.tag_cloud li {
         display: inline-block;
         margin: 0; }
+        * html body #grid #content .rail ul.tag_cloud li,
+        * + html body #grid #content .rail ul.tag_cloud li {
+          float: left; }
         body #grid #content .rail ul.tag_cloud li.tag_level-1 {
           font_size: 1em; }
         body #grid #content .rail ul.tag_cloud li.tag_level-2 {

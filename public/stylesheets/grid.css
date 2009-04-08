@@ -1,6 +1,6 @@
 /*
 Sass::SyntaxError: Undefined variable: "!grid_width".
-on line 1 of /home/dan/Projects/Pinmonkey/www/public/stylesheets/sass/grid.sass
+on line 1 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/grid.sass
 
 1: !grid = !grid_width-(!page_padding+(!border_size*2))
 2: !golden_column ||= (!grid/1.6180339887498948482)
@@ -12,7 +12,7 @@ on line 1 of /home/dan/Projects/Pinmonkey/www/public/stylesheets/sass/grid.sass
 
 
 Backtrace:
-/home/dan/Projects/Pinmonkey/www/public/stylesheets/sass/grid.sass:1
+/home/dan/Projects/primeenergy/www/public/stylesheets/sass/grid.sass:1
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/script/variable.rb:16:in `perform'
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/script/operation.rb:20:in `perform'
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/variable_node.rb:17:in `_perform'
@@ -76,4 +76,4 @@ script/server:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: Undefined variable: \"!grid_width\".\A on line 1 of /home/dan/Projects/Pinmonkey/www/public/stylesheets/sass/grid.sass\A \A 1: !grid = !grid_width-(!page_padding+(!border_size*2))\A 2: !golden_column ||= (!grid/1.6180339887498948482)\A 3: \A 4: =column_calc(!col_size)\A 5:   :width= (!col_size)-(!page_padding*2)+(!border_size*2)+\"em\"\A 6:   :padding= !page_padding/2+\"em\"\A 7:   :margin= (!page_padding/2)+\"em\"\A "; }
+  content: "Sass::SyntaxError: Undefined variable: \"!grid_width\".\A on line 1 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/grid.sass\A \A 1: !grid = !grid_width-(!page_padding+(!border_size*2))\A 2: !golden_column ||= (!grid/1.6180339887498948482)\A 3: \A 4: =column_calc(!col_size)\A 5:   :width= (!col_size)-(!page_padding*2)+(!border_size*2)+\"em\"\A 6:   :padding= !page_padding/2+\"em\"\A 7:   :margin= (!page_padding/2)+\"em\"\A "; }
