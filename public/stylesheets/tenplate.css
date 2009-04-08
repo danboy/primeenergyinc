@@ -532,8 +532,10 @@ body {
           padding: 0 1em;
           line-height: 2.5em;
           border-right: .1em solid #BBB; }
+          body #grid #header ul#navigation li.selected,
           body #grid #header ul#navigation li:hover {
             background: url(/images/nav-highlight.png) repeat-x center; }
+            body #grid #header ul#navigation li.selected a,
             body #grid #header ul#navigation li:hover a {
               color: #FFF; }
       body #grid #header #address {
@@ -555,7 +557,7 @@ body {
         padding: .5em; }
     body #grid #content .rail ul.tag_cloud {
       width: 100%;
-      margin: 2em 0; }
+      margin: 0 0 2em; }
       body #grid #content .rail ul.tag_cloud li {
         display: inline-block;
         margin: 0; }
@@ -571,7 +573,7 @@ body {
           font-size: 1.8em;
           font-weight: bold; }
         body #grid #content .rail ul.tag_cloud li a {
-          color: #DDD; }
+          color: #bbb; }
           body #grid #content .rail ul.tag_cloud li a:hover {
             color: #ff6600; }
     body #grid #footer {

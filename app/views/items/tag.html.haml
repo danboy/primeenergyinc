@@ -3,6 +3,7 @@
     %h3= link_to item.title, :controller => :items, :action => :permalink, :id => item.id
     %h4= "#{time_ago_in_words(item.created_at)} ago by #{get_author(item.user_id)}"
     %div.post_content
+      = image_tag item.photo.url(:medium), :class => "splash" if item.photo?
       = item.content
     %small
       -if item.tags != []

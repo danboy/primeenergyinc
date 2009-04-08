@@ -1,6 +1,6 @@
 /*
 Sass::SyntaxError: Undefined variable: "!page_padding".
-on line 14 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.sass
+on line 14 of /home/dan/Projects/primeenergyinc/public/stylesheets/sass/client.sass
 
 10:         :background url(/images/logo.png) no-repeat center
 11:         :width 30.5em
@@ -16,46 +16,46 @@ on line 14 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.
 
 
 Backtrace:
-/home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.sass:14
+/home/dan/Projects/primeenergyinc/public/stylesheets/sass/client.sass:14
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/script/variable.rb:16:in `perform'
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/script/operation.rb:20:in `perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/attr_node.rb:48:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:53:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:43:in `perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `map'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:117:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:53:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:43:in `perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `map'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:117:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:53:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:43:in `perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `map'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:117:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:53:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:43:in `perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `map'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:117:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:53:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:43:in `perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `map'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:62:in `perform_children'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform!'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:53:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:43:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/attr_node.rb:44:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:49:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:39:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:54:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:113:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:49:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:39:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:54:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:113:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:49:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:39:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:54:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:113:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:49:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:39:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:54:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/rule_node.rb:113:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:49:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:39:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:58:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:54:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:49:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/tree/node.rb:39:in `perform'
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/engine.rb:104:in `render'
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:75:in `update_stylesheet'
 /usr/lib/ruby/gems/1.8/gems/haml-2.1.0/lib/sass/plugin.rb:60:in `update_stylesheets'
@@ -109,4 +109,4 @@ script/server:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: Undefined variable: \"!page_padding\".\A on line 14 of /home/dan/Projects/primeenergy/www/public/stylesheets/sass/client.sass\A \A 10:         :background url(/images/logo.png) no-repeat center\A 11:         :width 30.5em\A 12:         :height 10em\A 13:         :font-size 1em\A 14:         :margin-bottom= !page_padding/2+\"em\"\A 15:         :float left\A 16:         :text-indent -9999em\A 17:       ul#navigation\A 18:         :background url(/images/nav.png) no-repeat top center\A 19:         :width 100%\A 20:         :height 4.6em\A "; }
+  content: "Sass::SyntaxError: Undefined variable: \"!page_padding\".\A on line 14 of /home/dan/Projects/primeenergyinc/public/stylesheets/sass/client.sass\A \A 10:         :background url(/images/logo.png) no-repeat center\A 11:         :width 30.5em\A 12:         :height 10em\A 13:         :font-size 1em\A 14:         :margin-bottom= !page_padding/2+\"em\"\A 15:         :float left\A 16:         :text-indent -9999em\A 17:       ul#navigation\A 18:         :background url(/images/nav.png) no-repeat top center\A 19:         :width 100%\A 20:         :height 4.6em\A "; }

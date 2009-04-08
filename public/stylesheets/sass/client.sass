@@ -30,6 +30,7 @@ body
           :padding= 0 !page_padding/2+"em"
           :line-height 2.5em
           :border-right .1em solid #BBB
+          &.selected,
           &:hover
             :background url(/images/nav-highlight.png) repeat-x center
             a
@@ -59,7 +60,7 @@ body
       .rail
         ul.tag_cloud
           :width 100%
-          :margin=  !page_padding+"em" 0
+          :margin=  0 0 !page_padding+"em"
           li
             :display inline-block
             :margin 0
@@ -75,7 +76,7 @@ body
               :font-size 1.8em
               :font-weight bold
             a
-              :color #DDD
+              :color #bbb
               &:hover
                 :color= !link_color
     #footer
