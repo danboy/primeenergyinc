@@ -13,3 +13,7 @@ $("navigation").childElements().each(function(item,index){
     document.location = item.down('a').href
   })
 });
+
+var images = new Array(
+"/images/splash.png"
+)

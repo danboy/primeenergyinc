@@ -54,4 +54,35 @@ JSLib.Editor = Class.create({
               this.editor.insertImage(value);
           }
   }
-})
+});
+
+var JSLib = JSLib ? JSLib : {};
+
+JSLib.ImageRotator = Class.create({
+  initialize: function(element, images, options){
+  this.options = Object.extend({
+      position: 'center',
+    }, options);
+    this.index = 0;
+    this.element = element;
+
+    $(this.element).setStyle({height:$(this.element).height+"px"})
+    //images = images;
+    this.setTimer();
+  },
+  doWipe: function(image){
+    //new Effect.Wipe(this.element,{element:image,duration:2,mode:this.options.mode});
+    //alert(image);
+    Effect.Appear(this.element,{from:0,to:1,duration:.4});
+    $(this.element).src = image;
+  },
+  setTimer: function(){
+    var self = this;
+    this.doWipe(images[this.index]);
+    //alert(images[this.index]);
+    if(this.index < (images.length-1)){this.index++}else{this.index=0}
+    setTimeout(function(){self.setTimer()}, 20000);
+  }
+});
+
+//new JSLib.ImageRotator("splash",images,{mode: 'vSplit'})
